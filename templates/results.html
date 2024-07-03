@@ -1,0 +1,32 @@
+{% extends "template.html" %}
+
+{% block head %}
+
+        <title>RESULTS - Sentiment Analysis Tool</title>
+
+{% endblock %}
+
+{% block content %}
+
+        <div class="text-center results">
+
+                <p> Here are the results of the sentiment analysis of your texts: </p>
+                <img class="results" src="static/outputs/image.jpg" width="500px"><br>
+
+                <div class="results-buttons-container">
+                        <a href="static/outputs/image.jpg" class="result-button" download>
+                                <button type="submit" class="btn btn-warning btn-sm ">Download image</button>
+                        </a>
+
+                        <form action="back_home" method="post" class="result-button" enctype="multipart/form-data">
+                                <button type="submit" class="btn btn-primary btn-sm" id="BackButton">Back</button>
+                        </form>
+                </div>
+                <p></p>
+                <p></p>
+        </div>
+
+{% endblock %}
+
+
+

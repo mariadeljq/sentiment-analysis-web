@@ -1,0 +1,58 @@
+{% extends "template.html" %}
+
+{% block head %}
+
+        <title>Sentiment Analysis Tool</title>
+
+{% endblock %}
+
+{% block content %}
+
+        <div class="text-center">
+                <form action="process_file" class="text-center" method="post" enctype="multipart/form-data">
+                        <div class="mb-3">
+                                <label for="excelFile" class="form-label">Select your Excel file:</label><br>
+                                <input type="file" class="form-control form-control-sm" name="excelFile" id="excelFile"
+                                accept=".xlsx, .xls" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                                <label for="columnHeader" class="form-label">Name of the header of the text column:</label>
+                                <input type="text" class="form-control form-control-sm text-center" id="columnHeader"
+                                name="columnHeader" placeholder="Name of the header" required>
+                        </div>
+        
+                        <button type="submit" id='ConfirmarButton' class="w-100 btn btn-success btn-sm" value="Confirmar">Submit</button>
+                </form> 
+        </div>
+          
+{% endblock %}
+
+{% block footer %}
+
+        <footer>
+                <p class="text-center" style="font-weight: 600; font-size: medium;">--- Extra Information ---</p>
+                <div class="footer-columns">
+                        <ul>
+                                <p><span style="font-weight: 600; text-align: left;">Language:</span><br>
+                                        This analysis only works with texts in English.</p>
+                        </ul> 
+                        <ul>
+                                <p><span style="font-weight: 600; text-align: left;">Charging time: </span><br>
+                                        If your file contains a lot of texts, charging time could increase.
+                                        A spinner loader in the window means that your file is being analyzed, be pacient.</p>
+                        </ul> 
+                        <ul>
+                                <p><span style="font-weight: 600; text-align: left;">Select your Excel file: </span><br>
+                                        Your file must have the following format: .xlsx o .xls</p>
+                        </ul>  
+                        <ul>
+                                <p><span style="font-weight: 600; text-align: left;">Name of the header of the text column: </span><br>
+                                        Enter the name of the column (header) containing the texts to be analyzed.</p>
+                        </ul>  
+                </div>
+        </footer>
+    
+{% endblock %}
+
+

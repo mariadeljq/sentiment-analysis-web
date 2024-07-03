@@ -1,0 +1,29 @@
+{% extends "template.html" %}
+
+{% block head %}
+
+        <title>ERROR - Sentiment Analysis Tool</title>
+        
+{% endblock %}
+
+{% block content %}
+
+        <form id="errorPageForm" action="back_home" class="text-center" method="post" enctype="multipart/form-data">
+                <img src="static/error_icon.png" width="30px" alt="Error"><p></p>
+                <p>{{ text }}</p>
+                <button type="submit" class="w-100 btn btn-primary btn-sm" id="BackButton">Back</button>
+        </form>
+
+{% endblock %}
+
+{% block footer %}
+
+        <footer class="text-center">
+                <ul class="list-unstyled">
+                        <p>{{ text2 }}</p>
+                </ul>  
+        </footer>
+        
+{% endblock %}
+
+

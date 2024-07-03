@@ -1,0 +1,83 @@
+body.container{
+  background-image: url('bg.jpg');
+  background-size: cover;
+  margin-top: 2%;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+
+footer {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 10px;
+  background-color: #19bcee60;
+  border-radius: 10px;
+  font-size: smaller;
+  font-weight: 400;
+}
+
+.footer-columns {
+  display: flex;
+}
+
+.footer-columns ul {
+  flex: 1;
+  flex-wrap: wrap ;
+}
+
+form.text-center {
+    width: 50%; 
+    margin: 0 auto; 
+    margin-top:30px;
+    margin-bottom: 10px;
+    background-color: #f1d269;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+label {
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+}
+
+input[type="file"]{
+    background-color: #f1ecd9;
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    font-weight: 400;
+}
+
+button[type="submit"]{
+  font-weight: 600;
+}
+
+#errorPageDiv {
+  padding: 40px;
+}
+
+div.results{
+  margin-top: 15px;
+}
+
+img.results{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.results-buttons-container{
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.result-button {
+  flex: 1;
+}
